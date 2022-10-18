@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Cheat Sheet</title>
+        <style>
+        h1 {
+            text-align: center;
+            background-color:rgb(180, 180, 180)
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+        dt{
+            font-size: 16px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 15px;
+        }
+        span{
+            border: 1px solid black
+        }
+        dt.cap{
+            text-transform:capitalize;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        dd.code {
+            display: block;
+            font-family: monospace;
+            font-size: 15px
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div> <!--Reading Assigment 1-->
+            <hr>
+            <h1> Reading Assignment 1: Cheat Sheet</h1>
+            <hr>
+            <section>
+            <h2> Word Wide Web General</h2>
+                <dl>
+                    <dt>1. What are most essential technologies that made the World Wide Web such a success?</dt>
+                    <dd>HTTP (Hypertext Transfer Protocol, Hypertext Markup Language (HTML), Uniform Resource Locator (URLs)</dd>
+                    <dt>2. How are resources (html pages, images, etc) addressed in the web?</dt>
+                    <dd>URL is the most common form of resource identifier.</dd>
+                    <dt>3. What are the general components of an URL?</dt>
+                    <dd>Five Components: Scheme, Authority, Path, Query, Fragment <br> 
+                        Three Subcomponents: Userinfo, Host, Port</dd>
+                  </dl>
+            </section>
+            <section>
+                <h2>Web Server</h2>
+                <dl>
+                    <dt>1. What is a web server?</dt>
+                    <dd>A web server is a computer that stores web server software and a website's component files</dd>
+                    <dt>2. What does a web server do?</dt>
+                    <dd>A web server uses HTTP and other protocols to respond to client requests made over the World Wide Web.</dd>
+                    <dt>3. How can content be stored on a web server?</dt>
+                    <dd>Content can be stored as <abbr title="Pre-existing files">static content</abbr> or as <abbr title="Generated at the time of the request">dynamic content</abbr></dd>
+                </dl>
+            </section>
+            <section>
+                <h2>Web Client</h2>
+                <dl>
+                    <dt>1. What is a web client?</dt>
+                    <dd>A Web client typically refers to the Web browser in the user's machine or mobile device.</dd>
+                    <dt>2. What does a web client do?</dt>
+                    <dd>A web client connects to a web server over HTTP.</dd>
+                    <dt>3. Is the Web Client and Web Browser the same?</dt>
+                    <dd>No, Web Browser is only a part of the Web Client. <br> Web Browser delivers Web pages received from the Web Server to the Web Client.
+                </dl>
+            </section>
+            <section>
+                <h2>Hello World</h2>
+                <dl>
+                    <dt>1. What is the html head element?</dt>
+                    <dd>The &lt;head&gt; element is a container for <abbr title="A set of data that describes and gives information about other data">metadata</abbr>. <br>
+                        It is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. <br>
+                        Defines information about the document.</dd>
+                    <dt>2. What does <span>&lt;!DOCTYPE html&gt;</span> mean?</dt>
+                    <dd>All HTML documents must start with a &lt;!DOCTYPE html&gt; declaration. <br> It is an "information" to the browser about what document type to expect. </dd>
+                    <dt>3. What are the two topmost elements within the html element?</dt>
+                    <dd>They are &lt;head&gt; and &lt;body&gt;.</dd>
+                    <dt>4. How to emphasize a text and how is it displayed in the browser?</dt>
+                    <dd>With &lt;em&gt; and &lt;/em&gt;, it is displayed fancy and italic.</dd>
+                    <dt>5. How to markup important text and how is it displayed in the browser?</dt>
+                    <dd>With &lt;mark&gt; and &lt;/mark&gt;, it is displayed with a yellow background behind the text</dd>
+                </dl>
+            </section>
+        </div>
+        <div> <!--Reading Assigment 2-->
+            <hr>
+            <h1>Reading Assignment 2: Cheat Sheet</h1>  
+            <hr>
+            <section>
+                <h2> HTML </h2>
+                <dl>
+                    <dt>1. Name the components of html elements properly</dt>
+                    <dd>An HTML element is defined by a start tag, some content, and an end tag. <br>
+                        It is everything from the start tag to the end tag.</dd>
+                    <dt>2. Identify void elements and how they are denoted</dt>
+                    <dd>HTML elements with no content are called void (or empty) elements. <br>
+                        Example: <strong>&lt;br&gt;</strong>, defines a line break.</dd>
+                    <dt>3. Identify attributes</dt>
+                    <dd>
+                        <ul>
+                            <li>All HTML elements can have attributes</li>
+                            <li>Attributes provide additional information about elements</li> 
+                            <li>Attributes are always specified in the start tag</li>
+                            <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                        </ul>
+                    </dd>
+                    <dt>4. Write down the correct <span>&lt;DOCTYPE&gt;</span> declaration for html 5</dt>
+                    <dd>&lt;!DOCTYPE html&gt;</dd>
+                    <dt>5. Write down syntactically correct statements for the following element:</dt>
+                    <ul>
+                        <dt>
+                            <li><dt>Article <span>&lt;article&gt;</span></dt></li>
+                            <dd>The <strong>&lt;article&gt;</strong> tag specifies independent, self-contained content.<br>
+                                An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</dd>
+                            <li><dt>Body <span>&lt;body&gt;</span></dt></li>
+                            <dd>The <strong>&lt;body&gt;</strong> tag defines the document's body.<br>
+                                The <strong>&lt;body&gt;</strong> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</dd>
+                            <li><dt>Line break <span>&lt;br/&gt;</span></dt></li>
+                            <dd>Use <strong>&lt;br&gt;</strong> if you want a line break (a new line) without starting a new paragraph</dd>
+                            <li><dt>Headings <span>&lt;h1&gt;</span>, ...</dt></li>
+                            <dd>The <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> tags are used to define HTML headings. <br>
+                                <strong>&lt;h1&gt;</strong> defines the most important heading. <br>
+                                <strong>&lt;h6&gt;</strong> defines the least important heading.</dd>
+                            <li><dt>Section with meta-information <span>&lt;head&gt;</span></dt></li>
+                            <dd>The <strong>&lt;head&gt;</strong> element is a container for metadata (data about data) and is placed between the <strong>&lt;html&gt;</strong>tag and the <strong>&lt;body&gt;</strong> tag. <br>
+                                Metadata is data about the HTML document. Metadata is not displayed.</dd>
+                            <li><dt>Top level element <span>&lt;html&gt;</span></dt></li>
+                            <dd>The <strong>&lt;html&gt;</strong> element is the root element and it defines the whole HTML document.</dd>
+                            <li><dt>Image named <span>Team.jpg</span> <span>&lt;img src="Team.jpg"&gt;</span></dt></li>
+                            <dd>The <strong>&lt;img&gt;</strong> tag is used to embed an image in an HTML page. <br>
+                                Images are not technically inserted into a web page; images are linked to web pages. <br>
+                                The <strong>&lt;img&gt;</strong>  tag creates a holding space for the referenced image. <br>
+                                The <strong>&lt;img&gt;</strong>  tag has two required attributes: <br>
+                                <strong>src</strong> - Specifies the path to the image <br>
+                                <strong>alt</strong> - Specifies an alternate text for the image, if the image for some reason cannot be displayed</dd>
+                            <li><dt>Paragraph <span>&lt;p&gt;</span></dt></li>
+                            <dd>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</dd>
+                            <li><dt>Section <span>&lt;section&gt;</span></dt></li>
+                            <dd>The <strong>&lt;section&gt;</strong> tag defines a section in a document.</dd>
+                            <li><dt>Label appearing in the title bar <span>&lt;title&gt;</span></dt></li>
+                            <dd>The title attribute defines some extra information about an element. <br>
+                                The value of the title attribute will be displayed as a tooltip when you mouse over the element</dd>
+                            <li><dt>Link to other pages <span>&lt;a&gt;</span></dt></li>
+                            <dd>The <strong>&lt;a&gt;</strong> tag defines a hyperlink, which is used to link from one page to another. <br>
+                                The most important attribute of the <strong>&lt;a&gt;</strong>  element is the href attribute, which indicates the link's destination. <br>
+                                By default, links will appear as follows in all browsers: <br>
+                                An unvisited link is underlined and blue <br>
+                                A visited link is underlined and purple <br>
+                                An active link is underlined and red </dd>
+                            <li><dt>Comment</dt></li>
+                            <dd>The comment tag is used to insert comments in the source code. <br>
+                                Syntax: &lt; ! - - and - - &gt;</dd>
+                            <li><dt>Head with title and meta elements</dt></li>
+                            <dd>The <strong>&lt;title&gt;</strong>  element defines the title of the document.<br>
+                                The <strong>title</strong>  must be text-only, and it is shown in the browser's title bar or in the page's tab.<br>
+                                The <strong>&lt;meta&gt;</strong> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.</dd>
+                        </dt>
+                    </ul>
+                </dl>
+            </section>      
+            <section>        
+                <h2> CSS </h2>
+                <dl>
+                    <dt>1. Name the components of a css rule properly</dt>
+                    <dd><ins>A CSS rule consists of a selector and a declaration block.</ins><br>
+                        <p>
+                            <img src="css.png" alt="cool image (trust)"> <br>
+                        </p>
+                        The selector points to the HTML element you want to style.<br>
+                        The declaration block contains one or more declarations separated by semicolons.<br>
+                        Each declaration includes a CSS property name and a value, separated by a colon.<br>
+                        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. 
+                    </dd>
+                    <dt>2. Use combinators properly: direct child, descendant, adjacent sibling, sibling</dt>
+                    <dd>
+                        <ul>
+                            <li>descendant selector (space)</li>
+                            <li>child selector (>)</li>  
+                            <li>adjacent sibling selector (+) </li> 
+                            <li>general sibling selector (~)</li>  
+                        </ul>
+                    </dd>
+                    <dt>3. Specify colors by color names and in hexadecimal notation</dt>
+                    <dd>
+                        <ul>
+                            <li>Tomato = #FF6347</li>
+                            <li>Orange = #FFA500</li>
+                            <li>Gray   = #3CB371</li>
+                        </ul>
+                    </dd>
+                    <dt>4. Declarations for color, background color</dt>
+                    <dd>
+                        <strong>style</strong>="color:Tomato;" <br>
+                        <strong>style</strong>="background-color: Tomato;"
+                    </dd>
+                    <dt>5. Pseudo classes for the <span>&lt;a&gt;</span> element </dt>
+                    <dd class="code">
+                        a:link { &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective. <br>
+                        color: red;    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Note: a:active MUST come after a:hover in the CSS definition in order to be effective. <br>
+                        } <br>
+                        <br>
+                        a:visited { <br>
+                            color: green; <br>
+                        } <br>
+                        <br>
+                        a:hover { <br>
+                            color: hotpink; <br>
+                        } <br>
+                        <br>                
+                        a:active { <br>
+                            color: blue; <br>
+                        } <br>
+                    </dd>
+                    <dt>6. Declaration for background image</dt>
+                    <dd class="code">background-image: url("image.name");</dd>
+                    <dt>7. Declaration for text alignment (left, right, center, justify)</dt>
+                    <dd>
+                        <strong>text-align</text-align></strong>: center/right/left/justify; <br>
+                        <ul>
+                            <li><strong>center:</strong> display in center/li>
+                            <li><strong>right:</strong> display on the right</li>
+                            <li><strong>left:</strong> display on the left</li>
+                            <li><strong>justify:</strong> each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers)</li>
+                        </ul>
+                    </dd>
+                    <dt>8. Declaration for text decoration (overline, underline, line-through)</dt>
+                    <dd>
+                        <strong>text-decoration-line:</strong> overline/underline/line-through
+                        <ul>
+                            <li><strong>overline:</strong> line over text</li>
+                            <li><strong>underline:</strong> line below text</li>
+                            <li><strong>line-through:</strong> line through text</li>
+                            <li><strong>combinations:</strong> you can combine the 3 lines</li>
+                        </ul>
+                    </dd>
+                    <dt>9. Declaration for text transformation (uppercase, lowercase, capitalize)</dt>
+                    <dd>
+                        <strong>text-transform::</strong> uppercase/lowercase/capitalize
+                        <ul>
+                            <li><strong>uppercase:</strong> every letter is uppercase</li>
+                            <li><strong>lowercase:</strong> every letter is lowercase</li>
+                            <li><strong>capitalize:</strong> every first letter of a word is uppercase</li>
+                        </ul>
+                    </dd>
+                    <dt>10. Identify the difference between serif and sans-serif fonts</dt>
+                    <dd>
+                        1. <strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance. <br>
+                        2. <strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.<br>
+                        <img src="Sans-serif.png" alt="Sans-Serif" width="100" height="100"> <img src="Serif.png" alt="Serif" width="60" height="100">
+                    </dd>
+                    <dt>11. Declarations for font families</dt>
+                    <dd>
+                        (Generic Font Family) <br>
+                        <strong>font-family:</strong> serif/sans serif/monospace/Cursive/Fantasy<br> 
+                        OR <br>
+                        (Examples of Font Names)<br>
+                        <strong>font-family:</strong> "Lucida Console" / "Times New Roman" / "Arial"
+                    </dd>
+                    <dt>12. Declarations for font style normal and italic</dt>
+                    <dd>
+                        <strong>font-style:</strong> normal/italic/oblique
+                        <ul>
+                            <li><strong>Normal:</strong> normal</li>
+                            <li><strong>Italic:</strong> italic</li>
+                            <li><strong>oblique:</strong> “leaning” (similar to italic)</li>
+                        </ul>
+                    </dd>
+                    <dt>13. Declarations for font sizes</dt>
+                    <dd>
+                        <strong>font-size:</strong> px/em/%/vw 
+                        <ul>
+                            <li><strong>px:</strong> normal</li>
+                            <li><strong>em:</strong> pixels/16=em</li>
+                            <li><strong>%:</strong> percentage (100% is normal)</li>
+                            <li><strong>vw:</strong> “viewport width”, Responsive Font Size, text size will follow the size of the browser window</li>
+                        </ul>
+                    </dd>
+                    <dt>14. Declarations for font weights</dt>
+                    <dd>
+                        <strong>font-weight:</strong> normal/lighter/bold
+                        <ul>
+                            <li><strong>Normal:</strong> normal</li>
+                            <li><strong>Lighter:</strong> light</li>
+                            <li><strong>Bold:</strong> thick</li>
+                        </ul>
+                    </dd>
+                </dl>     
+            </section>
+        </div>
+        <div> <!--Reading Assigment 3-->
+            <hr>
+            <h1>Reading Assignment 3: Cheat Sheet</h1>
+            <hr>
+            <section>
+                <h2>Html for Lists</h2>
+                <dl>
+                    <dt>1. Start tags for:</dt>
+                    <ul>
+                        <li><dt class ="cap">an ordered list</dt></li>
+                        <dd class="code">&lt;ol&gt;</dd>
+                        <li><dt class ="cap">an unordered list</dt></li>
+                        <dd class="code">&lt;ul&gt;</dd>
+                        <li><dt class ="cap">a description list</dt></li>
+                        <dd class="code">&lt;dl&gt;</dd>
+                        <li><dt class ="cap">a list item</dt></li>
+                        <dd class="code">&lt;li&gt;</dd>
+                        <li><dt class ="cap">a description term</dt></li>
+                        <dd class="code">&lt;dt&gt;</dd>
+                        <li><dt class ="cap">a description data</dt></li>
+                        <dd class="code">&lt;dd&gt;</dd>
+                    </ul>
+                </dl>
+            </section>
+            <section>
+                <h2>Css for Lists</h2>
+                <dl>
+                    <dt>1. Make bullet a square</dt>
+                    <dd class = "code">list-style-type: square;</dd>
+                    <dt>2. Make bullet an image named "my-bullet.png"</dt>
+                    <dd class = "code">list-style-image: url("my-bullet.png");</dd>
+                    <dt>3. Make bullet an uppercase roman number</dt>
+                    <dd class = "code">list-style-type: upper-roman;</dd>
+                    <dt>4. Set bullet position to be inside the list item's text flow</dt>
+                    <dd class = "code">list-style-position: inside;</dd>
+                    <dt>5. Set bullet position to be outside the list item's text flow</dt>
+                    <dd class = "code">list-style-position: outside;</dd>
+                </dl>
+            </section>
+            <section>
+                <h2>Html for Tables</h2>
+                <dl>
+                    <dt>1. Start tags for:</dt>
+                    <ul>
+                        <li><dt class="cap">a table</dt></li>
+                        <dd class="code">&lt;table&gt;</dd>
+                        <li><dt class="cap">a table row</dt></li>
+                        <dd class="code">&lt;tr&gt;</dd>
+                        <li><dt class="cap">a table header</dt></li>
+                        <dd class="code">&lt;th&gt;</dd>
+                        <li><dt class="cap">a table header cell</dt></li>
+                        <dd class="code">&lt;thead&gt;</dd>
+                        <li><dt class="cap">A table body</dt></li>
+                        <dd class="code">&lt;tbody&gt;</dd>
+                        <li><dt class="cap">A table cell</dt></li>
+                        <dd class="code">&lt;td&gt;</dd>
+                        <li><dt class="cap">A table footer</dt></li>
+                        <dd class="code">&lt;footer&gt;</dd>
+                        <li><dt class="cap">A table footer cell</dt></li>
+                        <dd class="code">&lt;tfoot&gt;</dd>
+                    </ul>
+                </dl>
+            </section>
+            <section>
+                <h2>Css for Tables</h2>
+                <dl>
+                    <dt>1. Black dotted border of 1 px width.</dt>
+                    <dd>Answ</dd>
+                    <dt>2. Solid border of 1 px width having a red color and rounded corners</dt>
+                    <dd>Answ</dd>
+                    <dt>3. Merge the borders of table cells so that they appear as one line</dt>
+                    <dd>Answ</dd>
+                </dl>
+            </section>
+        </div>
+    </body>
+</html>
